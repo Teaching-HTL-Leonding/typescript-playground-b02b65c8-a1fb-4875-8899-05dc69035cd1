@@ -37,7 +37,15 @@ function setup() {
 
     // 3.Draw the tree
     fill("darkgreen");
-    ellipse()
+    ellipse(305, 210, 64, 64);
+
+    // Draw the sun
+    fill("yellow");
+    ellipse(500, 100, 100, 100);
+
+    // Draw the sunbeams
+    fill("yellow")
+    
  
     
 }
