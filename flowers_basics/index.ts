@@ -1,16 +1,16 @@
 function setup() {
-  createCanvas(500, 1000);
+  createCanvas(1000, 1000);
   
   background("white");
   
   strokeWeight(15)
 
   //Draw the first stem;
-  noFill()
+  noFill();
   stroke("darkgreen");
   arc(260, 350, 100, 150, 30, 45);
 
-  noStroke()
+  noStroke();
 
    //Draw the Flower Petals;
   fill("lime");
@@ -24,7 +24,25 @@ function setup() {
   fill("yellow");
   circle(250, 250, 65);
 
+  //Draw the stem;
+  noFill();
+  stroke("darkgreen");
+  arc();
   
+  noStroke();
+
+  //Draw the Flower middle;
+  fill("yellow");
+  circle(750, 250, 65);
+
+  //Draw the Flower Petals;
+  fill("lime");
+  circle(800, 250, 80);
+  circle(750, 300, 80);
+
+
+
+
 
 
 
