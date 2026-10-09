@@ -3,7 +3,7 @@ function setup() {
   
   background("white");
   
-  strokeWeight(15)
+  strokeWeight(17)
 
   //Draw the first stem;
   noFill();
@@ -27,18 +27,20 @@ function setup() {
   //Draw the stem;
   noFill();
   stroke("darkgreen");
-  arc();
+  arc(760, 350, 100, 150, 30, 45);
   
   noStroke();
-
-  //Draw the Flower middle;
-  fill("yellow");
-  circle(750, 250, 65);
 
   //Draw the Flower Petals;
   fill("lime");
   circle(800, 250, 80);
   circle(750, 300, 80);
+  circle(700, 250, 80);
+  circle(750, 200, 80);
+
+  //Draw the Flower middle;
+  fill("yellow");
+  circle(750, 250, 65);
 
 
 
@@ -47,7 +49,3 @@ function setup() {
 
 
 
-
-
-
-  }
