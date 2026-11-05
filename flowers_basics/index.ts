@@ -1,48 +1,52 @@
 function setup() {
 
-  createCanvas(500, 500);
+createCanvas(500, 500);
 
-strokeWeight(20)
+strokeWeight(20);
 
-  background("white");
+background("white");
 
-   //Draw the stem of the right Flower;
-  noFill();
-  stroke("darkgreen");
-  arc(375, 300, 100, 150, 30, 45);
+//Draw the right stemm;
+stroke("darkgreen");
+noFill();
+angleMode(DEGREES);
+arc(360, 340, 120, 150, 270, 75);
 
-  noStroke();
+noStroke();
 
-  //Draw the first Flower padels;
-  fill("limegreen");
-  circle(425, 200, 80);
-  circle(375, 150, 80);
-  circle(325, 200, 80);
-  circle(375, 250, 80);
+//Draw the Flower Petals;
+fill("limegreen");
+circle(425, 250, 80);
+circle(375, 200, 80);
+circle(325, 250, 80);
+circle(375, 300, 80);
 
-  //Draw the right Flower middle;
-  fill("yellow");
-  circle(375, 200, 65);
+//Draw the Flower middle
+fill("yellow");
+circle(375, 250, 65);
 
-  //Draw the stem of the left Flower;
-  noFill();
-  stroke("darkgreen");
-  arc(125, 300, 100, 150, 30, 45);
+strokeWeight(20);
 
-  noStroke();
+//Draw the left Stemm;
+stroke("darkgreen");
+noFill();
+arc(120, 340, 120, 150, 270, 75);
 
-  //Draw the left Flower padels;
-  fill("limegreen");
-  circle(175, 200, 70);
-  circle(140.5, 247.5, 70);
-  circle(81, 231.9, 70);
-  circle(81, 168.1, 70);
-  circle(140.5, 152.5, 70);
+noStroke();
 
-  //Draw the left Flower middle;
-  fill("yellow");
-  circle(125, 200, 65); 
+//Draw the Flower petals;
+fill("limegreen");
+circle(175, 250, 70);
+circle(140.5, 202.5, 70);
+circle(81, 218.1, 70);
+circle(81, 281.9, 70);
+circle(140.5, 297.5, 70);
 
-  
+//Draw the Flower middle;
+fill("yellow");
+circle(125, 250, 65);
+
 
 }
+
+ 
