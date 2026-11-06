@@ -26,12 +26,14 @@ function mouseMoved() {
   fill("white");
   circle(width / 2, height / 2, min(width, height) * 0.4);
 
+ const diameter: number = min(width, height) * 0.2;
+
   //Draw the circles around
   fill("tomato");
-  circle(width * 0.2, height / 2, min(width, height) * 0.2);
-  circle(width * 0.5, height * 0.2, min(width, height) * 0.2);
-  circle(width * 0.8, height / 2, min(width, height) * 0.2);
-  circle(width * 0.5, height * 0.8, min(width, height) * 0.2);
+  circle(width * 0.2, height / 2, diameter);
+  circle(width * 0.5, height * 0.2, diameter);
+  circle(width * 0.8, height / 2, diameter);
+  circle(width * 0.5, height * 0.8, diameter);
 
   //Draw the red circle in the middle
   fill("tomato");
