@@ -11,5 +11,5 @@ function mouseClicked() {
 
   clickPositions = `${clickPositions}, ${round(mouseX)}/${round(mouseY)}`;
 
-  text(clickPositions, 10, 20);
+  text(clickPositions, 10, 10, width - 20, 100);
 }
