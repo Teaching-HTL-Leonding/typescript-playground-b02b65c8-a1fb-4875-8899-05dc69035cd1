@@ -1,15 +1,26 @@
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(200, 200);
   background("lightblue");
+
+  noStroke();
+  fill("aqua");
+  circle(0, 0, 20);
+
+  fill("black");
+  text(clickPositions, 5, 5, width - 10, height - 10);
 }
 
-let clickPositions:string ="0/0"
+let clickPositions: string = '0/0'
 
 function mouseClicked() {
-  fill("darkblue");
-  circle(mouseX, mouseY, 15);
+  background("lightblue");
 
-  clickPositions = `${clickPositions}, ${round(mouseX)}/${round(mouseY)}`;
+  fill("aqua");
+  circle(mouseX, mouseY, 20);
+  clickPositions = `${clickPositions}, ${mouseX}/${mouseY}`;
 
-  text(clickPositions, 10, 10, width - 20, 100);
+  fill("lightblue");
+  rect(0, 0, width, 20);
+  fill("black");
+  text(clickPositions, 5, 5, width - 10, height - 10);
 }
